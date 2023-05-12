@@ -1,0 +1,204 @@
+@Import 'Utilities.Css';
+
+:Root {
+    --Primary: Rgb(29, 221, 189);
+    --BgDark: Rgb(12, 12, 12);
+    --White: Rgb(250, 250, 250);
+    --Secondary: Rgb(0, 59, 50);
+    --BgLight: Rgb(190, 181, 181);
+}
+
+* {
+    Padding: 0;
+    Margin: 0;
+    Box-Sizing: Border-Box;
+    -Webkit-Font-Smoothing: Antialiased;
+}
+
+Header {
+    Background-Color: Var(--BgDark);
+    Clip-Path: Polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+
+Header Nav .Left A {
+    Color: Var(--White);
+    Text-Decoration: None;
+    Margin-Right: 2rem;
+    Text-Transform: Uppercase;
+    Transition: All .2s Ease;
+}
+
+Header Nav .Left A:hover {
+    Color: Var(--Primary);
+}
+
+Header Nav {
+    Padding: 2rem 0;
+}
+
+Header Nav .Logo {
+    Margin-Right: 3rem;
+}
+
+Body {
+    Font-Family: 'Poppins', Sans-Serif;
+}
+
+.Container {
+    Max-Width: 1152px;
+    Padding: 0 15px;
+    Margin: 0 Auto;
+}
+
+.Hero {
+    Padding-Top: 2rem;
+    Padding-Bottom: 3rem;
+}
+
+.Hero .Left Img {
+    Width: 400px;
+}
+
+.Hero .Right {
+    Color: Var(--White);
+    Margin-Top: -7rem;
+}
+
+.Hero .Right H6 {
+    Font-Size: 1.6rem;
+    Color: Var(--Primary);
+    Margin-Bottom: 0.5rem;
+}
+
+.Hero .Right H1 {
+    Font-Size: 4rem;
+    Font-Weight: 100;
+    Line-Height: 1.2;
+    Margin-Bottom: 2rem;
+}
+
+.Hero .Right H1 Span {
+    Color: Var(--Primary);
+}
+
+.Hero .Right P {
+    Line-Height: 1.9;
+    Margin-Bottom: 2rem;
+}
+
+Section {
+    Padding: 6rem;
+}
+
+Section.About H1 {
+    Margin-Bottom: 1rem;
+    Font-Size: 1.6rem;
+    Font-Weight: 600;
+}
+
+Section.About H1 Span {
+    Color: Var(--Primary);
+}
+
+Section.About H3 {
+    Font-Size: 1rem;
+    Margin-Bottom: 1rem;
+    Font-Weight: 600;
+}
+
+Section.About P {
+    Font-Family: 'Lato', Sans-Serif;
+    Color: Var(--Secondary);
+    Line-Height: 1.9rem;
+    Margin-Bottom: 2rem;
+}
+
+Section.About .Socials {
+    Display: Flex;
+}
+
+Section.About .Socials A {
+    Display: Flex;
+    Align-Items: Center;
+    Justify-Content: Center;
+    Width: 35px;
+    Margin-Right: 0.8rem;
+    Border-Radius: 50%;
+}
+
+Section.About .Socials A:hover {
+    Background: Var(--Primary);
+}
+
+
+Section.Services {
+    Background: Rgb(17, 17, 17)
+}
+
+.Services-Head {
+    Color: Rgb(10, 9, 9);
+    Text-Align: Center;
+    Margin-Bottom: 1rem;
+    Line-Height: 0.5rem;
+    Color: Var(--Primary);
+}
+
+.Services-Head+P {
+    Color: Var(--White);
+    Font-Family: 'Lato', Sans-Serif;
+    Margin-Bottom: 1rem;
+    Text-Align: Center;
+    Margin-Bottom: 6rem;
+    Font-Weight: 400;
+}
+
+.Card Img {
+    Width: 120px;
+    Background: white;
+}
+
+Section.Services .Card-Grid {
+    Display: Grid;
+    Grid-Template-Columns: Repeat(3, 1fr);
+    Column-Gap: 2rem;
+}
+
+Section.Services .Card-Grid .Card {
+    Background: Var(--White);
+    Padding: 3rem 2rem;
+    Position: Relative;
+    Text-Align: Center;
+    Transition: All .2s Ease;
+}
+
+Section.Services .Card-Grid .Card Img {
+    Position: Absolute;
+    Top: -1.5rem;
+    Left: 50%;
+    Transform: TranslateX(-50%);
+    Color: Var();
+}
+
+Section.Services .Card-Grid .Card H2 {
+    Font-Weight: 600;
+    Font-Size: 1.2rem;
+    Margin-Bottom: 0.5rem;
+}
+
+Section.Services .Card-Grid .Card P {
+    Font-Family: 'Lato', Sans-Serif;
+    Color: Var(--Seconday);
+    Line-Height: 2.6;
+}
+
+Section.Services .Card-Grid .Card:hover {
+    Background: Var(--Primary);
+}
+
+Section.Services .Card-Grid .Card:hover H2 {
+    Color: Var(--White);
+}
+
+Section.Services .Card-Grid .Card:hover P {
+    Color: Var(--White);
+}
